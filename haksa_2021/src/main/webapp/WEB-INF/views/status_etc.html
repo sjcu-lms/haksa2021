@@ -1,0 +1,314 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>세종사이버대 LMS 작업현황판</title>
+</head>
+<body>
+<h1>세종사이버대 LMS</h1>
+<div class="status_menu">
+	<ul>
+		<li><a href="status_common.html" target="_self">가이드 및 공통페이지</a></li>
+		<li><a href="status_student.html" target="_self">학생(student)</a></li>
+		<li><a href="status_graduate.html" target="_self">대학원(graduate)</a></li>
+		<li><a href="status_professor.html" target="_self">교수(professor)</a></li>
+		<li><a href="status_admin.html" target="_self">관리자(admin)</a></li>
+		<li><a href="status_edu.html" target="_self">평생교육원</a></li>
+		<li><a href="status_eduManagement.html" target="_self">학사관리시스템</a></li>
+		<li class="on"><a href="status_lmsEtc.html" target="_self">기타(lmsEtc)</a></li>
+	</ul>
+</div>
+
+	<p class="totalpage"></p>
+
+	<table>
+		<caption>LMS이외</caption>
+		<colgroup><col width="12%" /><col width="12%" /><col width="12%" /><col width="15%" /><col width="15%" /><col width="6%" /><col width="12%" /><col width="*" /></colgroup>
+		<thead>
+			<tr>
+				<th scope="col">2depth</th>
+				<th scope="col">3depth</th>
+				<th scope="col">4depth or tab</th>
+				<th scope="col">path</th>
+				<th scope="col">file</th>
+				<th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">stat</th>
+				<th scope="col" title="yyyy-mm-dd">date</th>
+				<th scope="col">note</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td rowspan="3">고등교육통계관리</td>
+				<td rowspan="2">코드관리</td>
+				<td>리스트</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="lmsEtc/highEduStats_list.jsp">highEduStats_list.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">19.08.22</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td>팝업</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="lmsEtc/pop_highEduStats.jsp">pop_highEduStats.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">19.08.22</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td>고등교육통계</td>
+				<td></td>
+				<td></td>
+				<td class="file"><a target="_blank" href="lmsEtc/highEduStats_stats.jsp">highEduStats_stats.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">19.08.22</td>
+				<td class="note"></td>
+            </tr>
+            <tr>
+            	<td class="tit" rowspan="9">[채용시스템]<br>지원서 작성</td>
+            	<td>1.본인확인</td>
+            	<td>
+            		step1.전임교원 본인확인<br />
+            		step1.강사 본인확인
+            	</td>
+            	<td></td>
+            	<td class="file">
+					<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application1_0.jsp">application1_0.jsp</a><br />
+            		<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application2_0.jsp">application2_0.jsp</a>
+            	</td>
+            	<td class="stat">●</td>
+            	<td class="date">19.08.26</td>
+            	<td class="note" rowspan="9">
+            		*전임교원,강사 같이 있는 항목은 내용은 동일 소스<br />
+            		(각 step만 다름)
+            	</td>
+            </tr>
+            <tr>
+            	<td>2.지원구분 선택</td>
+            	<td>
+            		step2. 전임교원 지원구분<br />
+            		step2. 강사 지원구분
+            	</td>
+            	<td></td>
+            	<td class="file">
+					<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application1_1.jsp">application1_1.jsp</a><br />
+            		<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application2_1.jsp">application2_1.jsp</a>
+            	</td>
+				<td class="stat">●</td>
+				<td class="date">19.08.26</td>
+            </tr>
+            <tr>
+            	<td>3.개인정보이용동의</td>
+            	<td>
+            		step3.전임교원 개인정보이용동의<br />
+            		step3.강사 개인정보이용동의
+            	</td>
+            	<td></td>
+            	<td class="file">
+					<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application1_2.jsp">application1_2.jsp</a><br />
+            		<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application2_2.jsp">application2_2.jsp</a>
+            	</td>
+				<td class="stat">●</td>
+				<td class="date">19.08.26</td>
+            </tr>
+            <tr>
+            	<td>4.기본정보</td>
+            	<td>
+            		step4.전임교원 기본정보<br />
+            		step4.강사 기본정보
+            	</td>
+            	<td></td>
+            	<td class="file">
+					<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application1_3.jsp">application1_3.jsp</a>
+            		<br />
+            		<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application2_3.jsp">application2_3.jsp</a>
+            	</td>
+				<td class="stat">●</td>
+				<td class="date">19.08.26</td>
+            </tr>
+            <tr>
+            	<td>5.이력사항</td>
+            	<td>
+            		step5.전임교원 이력사항
+            	</td>
+            	<td></td>
+            	<td class="file"><a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application1_4.jsp">application1_4.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">19.08.26</td>
+            </tr>
+            <tr>
+            	<td>6.연구실적</td>
+            	<td>
+            		step6.전임교원 연구실적<br />
+            	</td>
+            	<td></td>
+            	<td class="file">
+					<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application1_5.jsp">application1_5.jsp</a><br />
+            	</td>
+				<td class="stat">●</td>
+				<td class="date">19.08.26</td>
+            </tr>
+            <tr>
+            	<td>7.자기소개서 · 학과운영계획서</td>
+            	<td>
+            		step7.전임교원 자기소개서 · 학과운영계획서<br />
+            	</td>
+            	<td></td>
+            	<td class="file">
+					<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application1_6.jsp">application1_6.jsp</a><br />
+            	</td>
+				<td class="stat">●</td>
+				<td class="date">19.08.26</td>
+            </tr>
+            <tr>
+            	<td>8.약력정보</td>
+            	<td>
+            		step8. 전임교원 약력정보<br />
+            		step5. 강사 약력정보<br />
+            	</td>
+            	<td></td>
+            	<td class="file">
+					<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application1_7.jsp">application1_7.jsp</a><br />
+            		<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application2_4.jsp">application2_4.jsp</a><br />
+            	</td>
+            	<td class="stat">●</td>
+            	<td class="date">19.08.26</td>
+            </tr>
+            <tr>
+            	<td>9.지원완료</td>
+            	<td>
+            		step9. 전임교원 지원완료<br />
+            		step6. 강사 지원완료<br />
+            	</td>
+            	<td></td>
+            	<td class="file">
+					<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application1_8.jsp">application1_8.jsp</a><br />
+            		<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/application2_5.jsp">application2_5.jsp</a>
+            	</td>
+				<td class="stat">●</td>
+				<td class="date">19.08.26</td>
+            </tr>
+            <tr>
+            	<td class="tit">[채용시스템]<br>지원서 관리</td>
+            	<td>
+            		1.전임교원 로그인 페이지<br>
+            		2.강사 로그인 페이지
+            	</td>
+            	<td></td>
+            	<td></td>
+            	<td class="file">
+					<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/applicationView1_0.jsp">applicationView1_0.jsp</a><br />
+            		<a target="_blank"
+					href="http://ulm.bvs.co.kr/sjcu/recruit/applicationView2_0.jsp">applicationView2_0.jsp</a>
+            	</td>
+            	<td class="stat">●</td>
+            	<td class="date">19.08.26</td>
+
+            	<td class="note">
+            		*로그인 페이지는 동일 소스(step 영역만 다름)
+            	</td>
+            </tr>
+		</tbody>
+	</table>
+
+<style type="text/css">
+* {margin:0; padding:0;font-size:11px;font-family:'NanumGothic', verdana;color:#666}
+ol, ul {list-style:none;}
+a {color:#27e; text-decoration:none;}
+a:focus, a:hover, a:active {text-decoration:underline;}
+body{padding:10px;}
+h1{margin-bottom:20px;font-size:14px;}
+h1 a{font-size:16px;color:#666}
+.status_menu {overflow: hidden;width:100%;margin-bottom:20px;padding-bottom:1px;}
+.status_menu li {float:left;width:25%;margin:0 -1px -1px 0;}
+.status_menu li a {display:block;height:25px;border:1px solid #999;background:#fff;font-size:14px;color:#999;line-height:25px;text-align:center;}
+.status_menu li a:hover {text-decoration:none;}
+.status_menu li.on a {background:#999;color:#fff;font-weight:bold;}
+.status_menu.menu01 li {width:100%;}
+.status_menu.menu02 li {width:50%;}
+.status_menu.menu03 li {width:33.3%;}
+.status_menu.menu04 li {width:25%}
+.status_menu.menu05 li {width:20%;}
+.status_menu.menu06 li {width:33.3%;}
+.totalpage{text-align:right;font-weight:bold;font-size:12px;}
+.down{text-align:right;font-weight:bold;padding-top:10px;}
+.down a{font-size:12px;color:#666}
+table{width:100%;border-collapse:collapse;}
+table caption{text-align:left;font-weight:bold;padding:10px 5px 5px;}
+table th{border:1px solid #ddd;padding:5px;background:#f9f9f9}
+table td{border:1px solid #ddd;padding:5px;}
+table tr:hover td{background:#f3ffff}
+table .stat,
+table .data{text-align:center;}
+table .line td{border-top:2px solid #999}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery.fn.stat = function (options) {
+		var settings = jQuery.extend({
+				total: '.totalpage',
+				title: 'caption',
+				content: 'table',
+				files: 'tbody tr',
+				stat: 'td.stat',
+				completed: '●',
+				index: 0,
+				openAll: true,
+				speed: 'fast'
+			}, options),
+			all_sections = this;
+		return this.each(function () {
+			var self = this,
+				$self = $(self),
+				title_text = [],
+				completed = 0;
+			self.section_title = $(settings.title, $self);
+			self.content = $(settings.content, $self);
+			self.files = $(settings.files, $self);
+			self.files.each(function () {
+				var stat = $(settings.stat, this);
+				stat.each(function () {
+					var text = $(this).text();
+					if (text && (text === settings.completed)) {
+						completed++;
+					}
+				});
+			});
+			title_text = [self.section_title.text(), '(', completed, '/', self.files.length, ')'];
+			self.section_title.text(title_text.join(''));
+
+			//total
+			var completedAll = 0;
+			$(settings.stat).each(function () {
+				var text = $(this).text();
+				if (text && (text == settings.completed)) {
+					completedAll++;
+				}
+			});
+			$(settings.total).text('(Total : '+completedAll+'/'+$(settings.files).length+'pages)');
+		});
+	};
+	$(document).ready(function () {
+		$('table').stat();
+	});
+</script>
+</body>
+</html>

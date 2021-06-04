@@ -1,0 +1,261 @@
+/******************************************************************************************************************************
+[참고사항]
+1. 기존 파일(학생,교수,관리자)들을 기본으로 대학원에 맞게 수정
+2. main_graduate.css 이외 모든 대학원 스타일
+*******************************************************************************************************************************/
+
+/*** common ***/
+a.gold, button.gold, span.gold {border-color:#ac854e !important;background:#ac854e !important;}
+
+/* 190218 수정 시작 */
+.listTable tr.noti .icon_noti {background-color:#ac854e;}
+.listTable tr.noti .al a {color:#ac854e;}
+
+.btn_r{text-align:center;}
+
+.tabMenu{position:relative;margin:0;padding:10px;border-bottom:1px solid #a6a6a6;z-index:100}
+.tabMenu.no_line{border-bottom:0}
+article .tabMenu{padding:0 0 10px}
+article .tabMenu p{padding:0}
+.tabMenu button{
+	position:relative;
+	display:block;width:100%;height:35px;line-height:35px;
+	box-sizing:border-box;
+	padding:0 15px;
+	background:url(../img_bvs/graduate/gold.png);border-radius:3px;
+	text-align:left;font-size:15px;font-weight:600;color:#fff
+}
+.tabMenu button:after{
+	content:'';
+	position:absolute;top:0;right:5px;
+	display:block;width:20px;height:100%;
+	background:url(../img_bvs/m/btn/button.png) no-repeat center;
+	background-size:11px auto;
+	transition:.3s
+}
+.tabMenu button.open:after{transform:rotate(-180deg)}
+.tabMenu p{
+	display:none;width:100%;box-sizing:border-box;
+	padding:0 10px;
+	position:absolute;left:0;
+	background:#fff;
+	overflow:hidden;
+}
+.tabMenu p a{
+	display:block;height:30px;line-height:30px;
+	padding:0 0 0 15px;
+	border-top:1px solid #fff;
+	text-align:left;color:#555;font-size:15px
+}
+.tabMenu p a+a{border-left:0}
+.tabMenu p a.on{background:#e8ecf1;color:#ac854e}
+.tabMenu+.title_total{margin-top:15px}
+
+.title_circle {background:url(../img_bvs/graduate/title_circle.png) no-repeat 0 4px}
+
+.icon_tel {background:url(../img_bvs/graduate/tel.png) no-repeat 0 1px}
+.icon_reply em,
+.icon_new {background:#ac854e;}
+/* 190218 수정 끝 */
+
+/*** layout ***/
+header .btn_lecMove:after {background:#ac854e url(../img_bvs/graduate/open.png) no-repeat center;background-size:40% auto;}
+footer .btn_quick {background-color:#ac854e;}
+
+#all_menu .menu {background:#ac854e}
+#all_menu .menu a.on:before {background-image:url(../img_bvs/graduate/lnb1_on.png)}
+#all_menu .menu li:nth-child(2) a.on:before {background-image:url(../img_bvs/graduate/lnb2_on.png)}
+#all_menu .menu li:nth-child(3) a.on:before {background-image:url(../img_bvs/graduate/lnb3_on.png)}
+#all_menu .menu_child h2 {color:#ac854e;}
+#all_menu .menu_child h2 a {background:url(../img_bvs/graduate/arrow2.png) no-repeat right center;}
+#all_menu .menu_child div>ul>li.child>a.on:before,
+#all_menu .menu_child div>ul>li.child>a.on:after {background:#ac854e}
+#all_menu .close {left:auto;right:25px;margin:0;}
+
+#gnb .menu>li>a:hover,
+#gnb .menu>li>a.on,
+#gnb .menu>li>a.active {color:#ac854e;}
+#gnb .menu_child div>ul>li>a.on {border-color:#ac854e;color:#ac854e;}
+#gnb .menu_child div>ul>li.child>a.on:after {background-color:#ac854e;}
+#gnb .menu_child div ul ul {background:#ac854e}
+#gnb .menu_child div ul ul li {border-bottom:1px solid #cbbba2;border-right:1px solid #cbbba2}
+#gnb .menu_child_wrap div>ul>li.home a {background:#ac854e}
+
+#quick .close {background:#ac854e}
+#quick_ct h3{padding:20px 0 10px;}
+#quick_ct>div>a {background-color:#ac854e}
+#quick_ct>div>p a:hover{color:#ac854e}
+#quick_ct>div>ul li a:hover{border:2px solid #ac854e}
+#quick_ct>div>a.btn_remote+.bn,
+#quick_ct>div>a.btn_remote+.bn_img {margin-top:25px;}
+#quick_ct>div>.bn,
+#quick_ct>div>.bn_img {display:block;}
+#quick_ct>div .unit {padding:0 5px;}
+
+article {padding-top:0;}
+article:not(.w) {min-height:350px !important;}
+
+/* 190218 수정 시작 */
+.select_area {padding-top:10px;}
+.searchBox {padding:10px;}
+.searchBox+.title_total {margin-top:-40px;}
+/* 190218 수정 끝 */
+
+/*** contents ***/
+ul.caution {background:url(../img_bvs/graduate/caution2.png) no-repeat 20px 20px}
+
+.listen_select li button.on {background:url(../img_bvs/graduate/gold.png);}
+
+.tableWrap table {min-width:400px;}
+.tableWrap table td {padding:10px 5px;}
+.tableWrap table td.al {padding:10px;}
+
+.viewTable th.need:before {margin:6px 5px 0 0;}
+
+.studentID .ct1_a{background-image:url(../img_bvs/graduate/circle_icon9.png);}
+.studentID .ct1_b{background-image:url(../img_bvs/graduate/circle_icon2.png)}
+.studentID .ct1_c{background-image:url(../img_bvs/graduate/circle_icon10.png)}
+.studentID .ct1_d{background-image:url(../img_bvs/graduate/circle_icon7.png)}
+
+.point_gold {color:#ac854e !important;}
+
+/* 190218 수정 시작 */
+#contents {padding:0 0 50px}
+hgroup{height:auto;padding:0;background:#f2f4f7}
+hgroup h2{
+	height:45px;line-height:45px;
+	text-align:center;font-size:18px;
+}
+hgroup p{display:none}
+
+#calendar_academic {padding:10px 10px 0;border-top:0}
+#calendar_academic .header h3{font-size:25px}
+#calendar_academic .header button{top:5px;background-size:auto 70%}
+#calendar_academic .header select{position:relative;display:block;}
+#calendar_academic .header .btn_s{top:47px}
+#calendar_academic .listen_select{margin-top:10px;z-index:10}
+#calendar_academic .listen_select>button{
+	position:relative;
+	display:block;width:100%;height:35px;line-height:35px;
+	box-sizing:border-box;
+	padding:0 15px;
+	background:url(../img_bvs/graduate/gold.png);border-radius:3px;
+	text-align:left;font-size:15px;font-weight:600;color:#fff
+}
+#calendar_academic .listen_select>button:after{
+	content:'';
+	position:absolute;top:0;right:5px;
+	display:block;width:20px;height:100%;
+	background:url(../img_bvs/m/btn/button.png) no-repeat center;
+	background-size:11px auto;
+	transition:.3s
+}
+#calendar_academic .listen_select ul{
+	display:none;
+	width:100%;box-sizing:border-box;
+	overflow:hidden;
+	position:absolute;left:0;
+	margin-top:2px;
+	background:#fff;
+	overflow:hidden;
+}
+#calendar_academic .listen_select li{
+	float:left;width:50%;
+	box-sizing:border-box;
+	margin-bottom:2px;
+	vertical-align:top
+}
+#calendar_academic .listen_select li+li{padding-left:0}
+#calendar_academic .listen_select li:nth-child(even){padding-left:2px}
+#calendar_academic .listen_select li,
+#calendar_academic .listen_select li button{height:30px}
+#calendar_academic .listen_select li button b{display:inline-block;margin:0 5px 0 0;vertical-align:middle}
+#calendar_academic .listen_select li button.on:after{display:none}
+#calendar_academic .listen_select>button.live:before,
+#calendar_academic .listen_select li button.live:before{
+	top:7px;left:auto;right:8px;
+	width:auto;height:15px;
+	padding:0 8px;
+	margin:0
+}
+#calendar_academic .listen_select>button.live:before{top:10px;right:40px}
+#calendar_academic .normalTable tbody th{font-size:12px;color:#000;padding:2px 2px 2px 10px;line-height:1.2em;text-align:left}
+#calendar_academic .calendarTable td span.on {background:url(../img_bvs/graduate/calendar_on.png) no-repeat;}
+#calendar_academic .calendar_wrap li {padding-left:150px;}
+
+#mySchedule .my_test>table {min-width:500px;}
+#mySchedule .my_homework>table {min-width:500px;}
+#mySchedule .my_seminar>table {min-width:600px;}
+#mySchedule .my_quiz>table {min-width:600px;}
+#mySchedule .my_discuss>table {min-width:600px;}
+#mySchedule .my_team>table {min-width:500px;}
+
+.stateBox {
+	display:inline-block;box-sizing:border-box;
+	padding:0 4px;
+	min-width:55px;height:24px;line-height:24px;border-radius:3px;background:#ac854e;
+	text-align:center;font-size:13px;color:#fff !important;letter-spacing:-1px
+}
+.stateBox.lightGray {background:#bfbfbf;}
+.stateBox.darkGray {background:#7f7f7f;}
+
+.normalTable .total span b {color:#ac854e;}
+
+.tabMenu_lecMain {margin:15px 0;padding:15px;background:#f2f4f7;}
+.tabMenu_lecMain select+select {margin-top:5px;}
+.tabMenu_lecMain .btn_r {margin-top:10px;}
+.tabMenu_lecMain .btn_r a {width:100%;margin-bottom:0;}
+/* 190218 수정 끝 */
+
+#quick_ct .bn_img .unit {
+	display:inline-block;width:50%;
+	box-sizing:border-box;vertical-align:top
+}
+#quick_ct .bn_img .unit a {
+	position:relative;
+	display:block;box-sizing:border-box;
+	text-align:center;font-size:17px;font-weight:600;color:#000
+}
+#quick_ct .bn_img .slick-dots {padding:10px 0 0;font-size:0;text-align:center;}
+#quick_ct .bn_img .slick-dots li {display:inline-block;width:auto;height:5px;padding:0 3px;font-size:0;}
+#quick_ct .bn_img .slick-dots li button {display:inline-block;overflow:hidden;width:25px;height:5px;background:#b2b2b2;text-indent:-100px;vertical-align:top;}
+#quick_ct .bn_img .slick-dots li.slick-active button {background:#ac854e;}
+
+
+/*** popup ***/
+.pop_new h2 {background-color:#ac854e;}
+.pop_new .tab li a.on{border-color:#ac854e;border-bottom:1px solid #fff;color:#ac854e}
+
+.course_change li a:hover{border-color:#ac854e}
+
+/* 190218 수정 시작 */
+.pop_ct .pop_pw_wrap{position:relative;padding:0 0 10px}
+.pop_ct .pop_pw_wrap table{height:auto}
+.pop_ct .pop_pw_wrap>button{
+	position:relative;
+	width:100%;height:40px;line-height:40px;
+	margin-top:5px;background:#ac854e;
+	font-size:15px
+}
+/* 190218 수정 끝 */
+
+@media screen and (max-width:760px){
+	#quick_ct>div>a.btn_remote+.bn,
+	#quick_ct>div>a.btn_remote+.bn_img {margin-top:10px;}
+
+    /*** contents ***/
+    .listen_select>button {background:url(../img_bvs/graduate/gold.png);}
+    .listen_select>button.live:before,
+    .listen_select li button.live:before {line-height:15px;}
+
+    .viewTable th.need:before {margin:7px 5px 0 0;}
+
+	/* 190218 수정 시작 */
+	#videoLec tr {padding-right:140px;}
+	#videoLec .v_file {position:absolute;right:100px;top:50%;margin-top:-18px;}
+	#videoLec .v_view {position:absolute;right:0;top:50%;margin-top:-15px;}
+	#videoLec .stateBox {margin-top:-5px;}
+	/* 190218 수정 끝 */
+
+    #quick_ct .bn_img .unit {padding:0 5px;}
+}

@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+caption>p {display:block;width:1px;height:1px;overflow:hidden;position:absolute;top:-1000em;left:0;}
+
+/* 고등교육통계관리 */
+.pop_highEduStats {overflow-x:hidden;overflow-y:auto;}
+.pop_highEduStats .search_area {float:left;width:calc(40% - 10px);}
+.pop_highEduStats .search_area .searchBox {margin-bottom:10px;padding:5px;border:1px solid #e0e1e2;border-top:1px solid #a6a6a6;}
+.pop_highEduStats .search_area .searchBox input {width:100%;}
+.pop_highEduStats .search_area .no_article {padding:20px 10px;font-weight:bold;}
+.pop_highEduStats .manage_area {float:right;width:60%;}
+.pop_highEduStats .manage_area .noArticleBox {display:table;width:100%;box-sizing:border-box;border:1px solid #e0e1e2;border-top:1px solid #a6a6a6;}
+.pop_highEduStats .manage_area .noArticleBox>p {display:table-cell;height:180px;font-weight:bold;text-align:center;vertical-align:middle;}
+.pop_highEduStats .manage_area .viewTable input {width:48%;}
+.pop_highEduStats .manage_area button+button{margin-left:10px;}
+/*.pop_highEduStats .manage_area button {display:inline-block;box-sizing:border-box;height:26px;line-height:24px;padding:0 10px 0 26px;border:1px solid #6a7384;border-radius:2px;background:url(../img_bvs/btn_icon/del_s.png) no-repeat 7px center;font-size:13px;color:#37445b}
+.pop_highEduStats .manage_area button+button{margin-top:7px;}
+.pop_highEduStats .manage_area button.modity {background-color:#6a7384;background-image:url(../img_bvs/btn_icon/modity_s.png);color:#fff}*/

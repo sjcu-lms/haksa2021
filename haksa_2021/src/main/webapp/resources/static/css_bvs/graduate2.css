@@ -1,0 +1,104 @@
+/******************************************************************************************************************************
+[참고사항]
+1. 기존 파일(학생,교수,관리자)들을 기본으로 대학원에 맞게 수정
+2. main_graduate2.css 이외 모든 대학원 스타일
+*******************************************************************************************************************************/
+
+/*** common ***/
+a.gold, button.gold, span.gold {border-color:#13224d !important;background:#13224d !important;}
+
+.icon_tel {background:url(../img_bvs/graduate2/tel.png) no-repeat 0 1px}
+
+/*** layout ***/
+header .btn_lecMove:after {background:#13224d url(../img_bvs/graduate2/open.png) no-repeat center;background-size:40% auto;}
+footer .btn_quick {background-color:#13224d;}
+
+#all_menu .menu {background:#13224d}
+#all_menu .menu a.on:before {background-image:url(../img_bvs/graduate2/lnb1_on.png)}
+#all_menu .menu li:nth-child(2) a.on:before {background-image:url(../img_bvs/graduate2/lnb2_on.png)}
+#all_menu .menu li:nth-child(3) a.on:before {background-image:url(../img_bvs/graduate2/lnb3_on.png)}
+#all_menu .menu_child h2 {color:#13224d;}
+#all_menu .menu_child h2 a {background:url(../img_bvs/graduate2/arrow2.png) no-repeat right center;}
+#all_menu .menu_child div>ul>li.child>a.on:before,
+#all_menu .menu_child div>ul>li.child>a.on:after {background:#13224d}
+#all_menu .close {left:auto;right:25px;margin:0;}
+
+#gnb .menu>li>a:hover,
+#gnb .menu>li>a.on,
+#gnb .menu>li>a.active {color:#13224d;}
+#gnb .menu_child div>ul>li>a.on {border-color:#13224d;color:#13224d;}
+#gnb .menu_child div>ul>li.child>a.on:after {background-color:#13224d;}
+#gnb .menu_child div ul ul {background:#13224d}
+#gnb .menu_child div ul ul li {border-bottom:1px solid #7e89a1;border-right:1px solid #7e89a1;}
+#gnb .menu_child_wrap div>ul>li.home a {background:#13224d}
+
+#quick .close {background:#13224d}
+#quick_ct h3{padding:20px 0 10px;}
+#quick_ct>div>a {background-color:#13224d}
+#quick_ct>div>p a:hover{color:#13224d}
+#quick_ct>div>ul li a:hover{border:2px solid #13224d}
+#quick_ct>div>a.btn_remote+.bn,
+#quick_ct>div>a.btn_remote+.bn_img {margin-top:25px;}
+#quick_ct>div>.bn,
+#quick_ct>div>.bn_img {display:block;}
+#quick_ct>div .unit {padding:0 5px;}
+
+article {padding-top:0;}
+article:not(.w) {min-height:350px !important;}
+
+.select_area {padding-top:10px;}
+
+.title_circle {background:url(../img_bvs/graduate2/title_circle.png) no-repeat 0 4px}
+
+/*** contents ***/
+ul.caution {background:url(../img_bvs/graduate2/caution2.png) no-repeat 20px 20px}
+
+.listen_select li button.on {background:url(../img_bvs/graduate2/gold.png);}
+
+.tableWrap table {min-width:400px;}
+.tableWrap table td {padding:10px 5px;}
+.tableWrap table td.al {padding:10px;}
+
+.viewTable th.need:before {margin:6px 5px 0 0;}
+
+.studentID .ct1_a{background-image:url(../img_bvs/graduate2/circle_icon9.png);}
+.studentID .ct1_b{background-image:url(../img_bvs/graduate2/circle_icon2.png)}
+.studentID .ct1_c{background-image:url(../img_bvs/graduate2/circle_icon10.png)}
+.studentID .ct1_d{background-image:url(../img_bvs/graduate2/circle_icon7.png)}
+
+.point_gold {color:#13224d !important;}
+
+#quick_ct .bn_img .unit {
+	display:inline-block;width:50%;
+	box-sizing:border-box;vertical-align:top
+}
+#quick_ct .bn_img .unit a {
+	position:relative;
+	display:block;box-sizing:border-box;
+	text-align:center;font-size:17px;font-weight:600;color:#000
+}
+#quick_ct .bn_img .slick-dots {padding:10px 0 0;font-size:0;text-align:center;}
+#quick_ct .bn_img .slick-dots li {display:inline-block;width:auto;height:5px;padding:0 3px;font-size:0;}
+#quick_ct .bn_img .slick-dots li button {display:inline-block;overflow:hidden;width:25px;height:5px;background:#b2b2b2;text-indent:-100px;vertical-align:top;}
+#quick_ct .bn_img .slick-dots li.slick-active button {background:#13224d;}
+
+
+/*** popup ***/
+.pop_new h2 {background-color:#13224d;}
+.pop_new .tab li a.on{border-color:#13224d;border-bottom:1px solid #fff;color:#13224d}
+
+.course_change li a:hover{border-color:#13224d}
+
+@media screen and (max-width:760px){
+	#quick_ct>div>a.btn_remote+.bn,
+	#quick_ct>div>a.btn_remote+.bn_img {margin-top:10px;}
+
+    /*** contents ***/
+    .listen_select>button {background:url(../img_bvs/graduate2/gold.png);}
+    .listen_select>button.live:before,
+    .listen_select li button.live:before {line-height:15px;}
+
+    .viewTable th.need:before {margin:7px 5px 0 0;}
+
+    #quick_ct .bn_img .unit {padding:0 5px;}
+}

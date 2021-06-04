@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>세종사이버대 LMS 작업현황판</title>
+</head>
+<body>
+<h1>세종사이버대 LMS</h1>
+<div class="status_menu">
+	<ul>
+		<li><a href="status_common.html" target="_self">가이드 및 공통페이지</a></li>
+		<li><a href="status_student.html" target="_self">학생(student)</a></li>
+		<li><a href="status_graduate.html" target="_self">대학원(graduate)</a></li>
+		<li><a href="status_professor.html" target="_self">교수(professor)</a></li>
+		<li><a href="status_admin.html" target="_self">관리자(admin)</a></li>
+		<li><a href="status_edu.html" target="_self">평생교육원</a></li>
+		<li class="on"><a href="status_eduManagement.html" target="_self">학사관리시스템</a></li>
+		<li><a href="status_lmsEtc.html" target="_self">기타(lmsEtc)</a></li>
+	</ul>
+</div>
+
+	<p>
+		*기존의 LMS 소스가 아닌 별도 소스사용<br />
+		* PC버전만 제작
+	</p>
+
+	<p class="totalpage"></p>
+
+	<table>
+		<caption>학사관리시스템</caption>
+		<colgroup><col width="12%" /><col width="12%" /><col width="12%" /><col width="15%" /><col width="15%" /><col width="6%" /><col width="12%" /><col width="*" /></colgroup>
+		<thead>
+			<tr>
+				<th scope="col">2depth</th>
+				<th scope="col">3depth</th>
+				<th scope="col">4depth or tab</th>
+				<th scope="col">path</th>
+				<th scope="col">file</th>
+				<th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">stat</th>
+				<th scope="col" title="yyyy-mm-dd">date</th>
+				<th scope="col">note</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Index</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/login.jsp">login.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td>Index (로그인 후)</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/login_after.jsp">login_after.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td>Mypage</td>
+				<td>일정관리</td>
+				<td>일정등록</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/calender_register.jsp">calender_register.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td rowspan="6">학적/졸업관리</td>
+				<td rowspan="2">기본학적관리</td>
+				<td>학생조회</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/basicInfo_stu.jsp">basicInfo_stu.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td>학적수정</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/basicInfo_modify.jsp">basicInfo_modify.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td>학생관리</td>
+				<td>제적생관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/expelled_ad.jsp">expelled_ad.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td rowspan="2">학적변동관리</td>
+				<td>복수전공관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/plural_ad.jsp">plural_ad.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td>부전공신청관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/minor_ad.jsp">minor_ad.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td>졸업관리</td>
+				<td>졸업자조회</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/inquiry_grad.jsp">inquiry_grad.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td rowspan="2">수업/성적관리</td>
+				<td>교과목관리</td>
+				<td>학과교과과목관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/subject_ad.jsp">subject_ad.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td>개설과목관리</td>
+				<td>개설과목신청관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/subject_appli_ad.jsp">subject_appli_ad.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td rowspan="3">입시관리</td>
+				<td>입시환경</td>
+				<td>채점자관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/marker_ad.jsp">marker_ad.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td>입학지원관리</td>
+				<td>지원자조회</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/applicant_ad.jsp">applicant_ad.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td>입시현황조회(통계)</td>
+				<td>일자별(웹/모바일)</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/statistics_date.jsp">statistics_date.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td>학생관리(상담)</td>
+				<td>상담관리</td>
+				<td>내학생관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/counselStu_ad.jsp">counselStu_ad.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td rowspan="2">등록관리</td>
+				<td>등록고지</td>
+				<td>재학생고지서 조회</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/billVeiw.jsp">billVeiw.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>은행파일생성</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/bankFile.jsp">bankFile.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td rowspan="2">장학관리</td>
+				<td>장학코드관리</td>
+				<td>장학코드(명)관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/code_ad.jsp">code_ad.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td>장학선발관리</td>
+				<td>장학신청자관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/requester_ad.jsp">requester_ad.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td>시스템관리</td>
+				<td>학사관리정보</td>
+				<td>학사년도 설정</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="eduManage/degree_setting.jsp">degree_setting.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+		</tbody>
+	</table>
+
+<style type="text/css">
+* {margin:0; padding:0;font-size:11px;font-family:'NanumGothic', verdana;color:#666}
+ol, ul {list-style:none;}
+a {color:#27e; text-decoration:none;}
+a:focus, a:hover, a:active {text-decoration:underline;}
+body{padding:10px;}
+h1{margin-bottom:20px;font-size:14px;}
+h1 a{font-size:16px;color:#666}
+.status_menu {overflow: hidden;width:100%;margin-bottom:20px;padding-bottom:1px;}
+.status_menu li {float:left;width:25%;margin:0 -1px -1px 0;}
+.status_menu li a {display:block;height:25px;border:1px solid #999;background:#fff;font-size:14px;color:#999;line-height:25px;text-align:center;}
+.status_menu li a:hover {text-decoration:none;}
+.status_menu li.on a {background:#999;color:#fff;font-weight:bold;}
+.status_menu.menu01 li {width:100%;}
+.status_menu.menu02 li {width:50%;}
+.status_menu.menu03 li {width:33.3%;}
+.status_menu.menu04 li {width:25%}
+.status_menu.menu05 li {width:20%;}
+.status_menu.menu06 li {width:33.3%;}
+.totalpage{text-align:right;font-weight:bold;font-size:12px;}
+.down{text-align:right;font-weight:bold;padding-top:10px;}
+.down a{font-size:12px;color:#666}
+table{width:100%;border-collapse:collapse;}
+table caption{text-align:left;font-weight:bold;padding:10px 5px 5px;}
+table th{border:1px solid #ddd;padding:5px;background:#f9f9f9}
+table td{border:1px solid #ddd;padding:5px;}
+table tr:hover td{background:#f3ffff}
+table .stat,
+table .data{text-align:center;}
+table .line td{border-top:2px solid #999}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery.fn.stat = function (options) {
+		var settings = jQuery.extend({
+				total: '.totalpage',
+				title: 'caption',
+				content: 'table',
+				files: 'tbody tr',
+				stat: 'td.stat',
+				completed: '●',
+				index: 0,
+				openAll: true,
+				speed: 'fast'
+			}, options),
+			all_sections = this;
+		return this.each(function () {
+			var self = this,
+				$self = $(self),
+				title_text = [],
+				completed = 0;
+			self.section_title = $(settings.title, $self);
+			self.content = $(settings.content, $self);
+			self.files = $(settings.files, $self);
+			self.files.each(function () {
+				var stat = $(settings.stat, this);
+				stat.each(function () {
+					var text = $(this).text();
+					if (text && (text === settings.completed)) {
+						completed++;
+					}
+				});
+			});
+			title_text = [self.section_title.text(), '(', completed, '/', self.files.length, ')'];
+			self.section_title.text(title_text.join(''));
+
+			//total
+			var completedAll = 0;
+			$(settings.stat).each(function () {
+				var text = $(this).text();
+				if (text && (text == settings.completed)) {
+					completedAll++;
+				}
+			});
+			$(settings.total).text('(Total : '+completedAll+'/'+$(settings.files).length+'pages)');
+		});
+	};
+	$(document).ready(function () {
+		$('table').stat();
+	});
+</script>
+</body>
+</html>

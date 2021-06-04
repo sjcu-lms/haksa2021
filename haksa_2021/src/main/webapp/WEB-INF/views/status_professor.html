@@ -1,0 +1,798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>세종사이버대 LMS 작업현황판</title>
+</head>
+<body>
+<h1>세종사이버대 LMS</h1>
+<div class="status_menu">
+	<ul>
+		<li><a href="status_common.html" target="_self">가이드 및 공통페이지</a></li>
+		<li><a href="status_student.html" target="_self">학생(student)</a></li>
+		<li><a href="status_graduate.html" target="_self">대학원(graduate)</a></li>
+		<li class="on"><a href="status_professor.html" target="_self">교수(professor)</a></li>
+		<li><a href="status_admin.html" target="_self">관리자(admin)</a></li>
+		<li><a href="status_edu.html" target="_self">평생교육원</a></li>
+		<li><a href="status_eduManagement.html" target="_self">학사관리시스템</a></li>
+		<li><a href="status_lmsEtc.html" target="_self">기타(lmsEtc)</a></li>
+	</ul>
+</div>
+
+	<p class="totalpage"></p>
+
+	<table>
+		<caption>교수(professor)</caption>
+		<colgroup><col width="12%" /><col width="12%" /><col width="12%" /><col width="15%" /><col width="15%" /><col width="6%" /><col width="12%" /><col width="*" /></colgroup>
+		<thead>
+			<tr>
+				<th scope="col">2depth</th>
+				<th scope="col">3depth</th>
+				<th scope="col">4depth or tab</th>
+				<th scope="col">path</th>
+				<th scope="col">file</th>
+				<th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">stat</th>
+				<th scope="col" title="yyyy-mm-dd">date</th>
+				<th scope="col">note</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>마이페이지</td>
+				<td>메인</td>
+				<td></td>
+				<td>mypage</td>
+				<td class="file"><a target="_blank" href="professor/mypage/main.jsp">main.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">
+					2017-11-07<br/>
+					2018.08.15 수정
+				</br/>
+				</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>메인_과목없음</td>
+				<td></td>
+				<td>mypage</td>
+				<td class="file"><a target="_blank" href="professor/mypage/main_no_data2.jsp">main_no_data2.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2018.08.22</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>정보수정</td>
+				<td></td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/mypage/modity.jsp">modity.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-10-30</td>
+				<td class="note"></td>
+			</tr>
+			<tr class="line">
+				<td>강의실</td>
+				<td>메인</td>
+				<td></td>
+				<td>classroom</td>
+				<td class="file"><a target="_blank" href="professor/classroom/main.jsp">main.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-11-04</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>메인_과목없음</td>
+				<td></td>
+				<td>classroom</td>
+				<td class="file"><a target="_blank" href="professor/classroom/main_no_data2.jsp">main_no_data2.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2018.08.22</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>강좌메인</td>
+				<td></td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/course_main.jsp">course_main.jsp</a></td>
+				<td class="stat"></td>
+				<td class="date">2018.08.16 수정</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>강의보기</td>
+				<td></td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/course_listen.jsp">course_listen.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2018-09-18</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>강의계획서</td>
+				<td>tab1_강의계획서 작성</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/course_program_tab1.jsp">course_program_tab1.jsp</a></td>
+				<td class="stat"></td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>tab2_주별강의내용 작성</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/course_program_tab2.jsp">course_program_tab2.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-10-28</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>pop_주별강의내용</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/pop_course_program_tab2.jsp">pop_course_program_tab2.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-10-28</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>tab3_주차별 기간/진도시간 관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/course_program_tab3.jsp">course_program_tab3.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-10-28</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>강의관리</td>
+				<td>조교관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/course_assistant.jsp">course_assistant.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-27</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>강의자료이관</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/course_transfer.jsp">course_transfer.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-27</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>학생강의실 메뉴관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/course_menu_student.jsp">course_menu_student.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-27</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>교수강의실 메뉴관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/course_menu_professor.jsp">course_menu_professor.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-27</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>학습지원실</td>
+				<td>추가게시판</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/.jsp">.jsp</a></td>
+				<td class="stat"></td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>과제관리</td>
+				<td>신규과제출제</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/work_edit_new.jsp">work_edit_new.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>과제채점_전체</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/work_admin_tab1.jsp">work_admin_tab1.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>_제출자</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/work_admin_tab2.jsp">work_admin_tab2.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>_미제출자</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/work_admin_tab3.jsp">work_admin_tab3.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>pop_과제제출정보</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/work_admin_pop.jsp">work_admin_pop.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>pop_과제제출정보</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/layer_work_admin_pop.jsp">layer_work_admin_pop.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>시험관리</td>
+				<td>온라인시험목록</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/test_list.jsp">test_list.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>상세_미응시자</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/test_view_tab3.jsp">test_view_tab3.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>퀴즈관리</td>
+				<td>문제등록</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/quiz_question.jsp">quiz_question.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-18</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>퀴즈관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/quiz_tab2.jsp">quiz_tab2.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-18</td>
+				<td class="note"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td></td>
+				<td>설문지 등록</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/quiz_survey.jsp">quiz_survey.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-18</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>pop_문제출제</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/quiz_pop.jsp">quiz_pop.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-24</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>pop_퀴즈_서술형채점</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/quiz_pop2.jsp">quiz_pop2.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-25</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>pop_퀴즈결과조회</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/quiz_pop3.jsp">quiz_pop3.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-25</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>토론방</td>
+				<td>pop_토론내용조회</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/newsgroup_pop.jsp">newsgroup_pop.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-18</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>팀프로젝트</td>
+				<td>팀만들기</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/team_project_add.jsp">team_project_add.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-18</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>팀편성</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/team_project_edit.jsp">team_project_edit.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-21</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>팀프로젝트관리>출제</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/team_project_exam.jsp">team_project_exam.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-18</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>pop_팀프로젝트 제출정보</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/team_project_pop1.jsp">team_project_pop1.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>pop_개별평가</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/team_project_pop2.jsp">team_project_pop2.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>평가관리</td>
+				<td>평가기준관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/evaluation_stand.jsp">evaluation_stand.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-24</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>(변경기간아님)</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/evaluation_stand2.jsp">evaluation_stand2.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-24</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>진도관리>pop_학생진도현황</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/evaluation_progress_pop.jsp">evaluation_progress_pop.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-24</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>중간/기말고사관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/evaluation_exam.jsp">evaluation_exam.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-24</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>종합평가</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/evaluation_comprehensive.jsp">evaluation_comprehensive.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-24</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>pop_평가기준관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/evaluation_stand_pop.jsp">evaluation_stand_pop.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-24</td>
+				<td class="note"></td>
+			</tr>
+			<!--
+			<tr>
+				<td></td>
+				<td>강의평가</td>
+				<td></td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/lecture_evaluation.jsp">lecture_evaluation.jsp</a></td>
+				<td class="stat"></td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			-->
+			<tr>
+				<td></td>
+				<td>설문관리</td>
+				<td>설문문항관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/survey_question.jsp">survey_question.jsp</a></td>
+				<td class="stat"></td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>설문지 관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/survey_questionnaire.jsp">survey_questionnaire.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-24</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>학습자관리</td>
+				<td>학생조회</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/learner_search.jsp">learner_search.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>학습활동관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/learner_active.jsp">learner_active.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>대면교과목관리</td>
+				<td>출석수업시험관리</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/.jsp">.jsp</a></td>
+				<td class="stat"></td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>출석수업시험결과</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/classroom/.jsp">.jsp</a></td>
+				<td class="stat"></td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr class="line">
+				<td>교수지원센터</td>
+				<td></td>
+				<td></td>
+				<td>support</td>
+				<td class="file"><a target="_blank" href="professor/support/main.jsp">main.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-11-24</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>교과과정</td>
+				<td></td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/support/application.jsp">application.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-21</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>상세</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/support/application_view.jsp">application_view.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-19</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>교과과정신청</td>
+				<td>교과목변경신청</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/support/application_change.jsp">application_change.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-19</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>신청등록</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/support/application_change_edit.jsp">application_change_edit.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-19</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>신청현황</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/support/application_change_state.jsp">application_change_state.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-19</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>교과목신설신청</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/support/application_found.jsp">application_found.jsp</a></td>
+				<td class="stat"></td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>개설과목신청</td>
+				<td></td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/support/establishment.jsp">establishment.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-21</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>상세</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/support/establishment_view.jsp">establishment_view.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-19</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>재학생관리</td>
+				<td>학생현황</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/support/enrolled_state.jsp">enrolled_state.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-09-19</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>교강사로그인현황</td>
+				<td></td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/support/login_state.jsp">login_state.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-10-16</td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>_상세</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/support/login_state_view.jsp">login_state_view.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2017-10-08</td>
+				<td class="note"></td>
+			</tr>
+			<tr class="line">
+				<td>교수서비스</td>
+				<td>스튜디오 예약 및 사용</td>
+				<td></td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/service/studioBooking_list.jsp">studioBooking_list.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2019-05-30</td>
+				<td class="note">
+					관리자소스와 동일(단,교수페이지는 반응형)
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>상세</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/service/studioBooking_view.jsp">studioBooking_view.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2019-05-30</td>
+				<td class="note">
+					관리자소스와 동일(단,교수페이지는 반응형)
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>등록</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/service/studioBooking_write.jsp">studioBooking_write.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date">2019-05-30</td>
+				<td class="note">
+					관리자소스와 동일(단,교수페이지는 반응형)
+				</td>
+			</tr>
+			<tr class="line">
+				<td>학생상담센터</td>
+				<td></td>
+				<td></td>
+				<td>advice</td>
+				<td class="file"><a target="_blank" href="professor/advice/.jsp">.jsp</a></td>
+				<td class="stat"></td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>1:1온라인상담</td>
+				<td>학습상담내역</td>
+				<td></td>
+				<td class="file"><a target="_blank" href="professor/advice/request_tab2.jsp">request_tab2.jsp</a></td>
+				<td class="stat">●</td>
+				<td class="date"></td>
+				<td class="note"></td>
+			</tr>
+		</tbody>
+	</table>
+
+<style type="text/css">
+* {margin:0; padding:0;font-size:11px;font-family:'NanumGothic', verdana;color:#666}
+ol, ul {list-style:none;}
+a {color:#27e; text-decoration:none;}
+a:focus, a:hover, a:active {text-decoration:underline;}
+body{padding:10px;}
+h1{margin-bottom:20px;font-size:14px;}
+h1 a{font-size:16px;color:#666}
+.status_menu {overflow: hidden;width:100%;margin-bottom:20px;padding-bottom:1px;}
+.status_menu li {float:left;width:25%;margin:0 -1px -1px 0;}
+.status_menu li a {display:block;height:25px;border:1px solid #999;background:#fff;font-size:14px;color:#999;line-height:25px;text-align:center;}
+.status_menu li a:hover {text-decoration:none;}
+.status_menu li.on a {background:#999;color:#fff;font-weight:bold;}
+.status_menu.menu01 li {width:100%;}
+.status_menu.menu02 li {width:50%;}
+.status_menu.menu03 li {width:33.3%;}
+.status_menu.menu04 li {width:25%}
+.status_menu.menu05 li {width:20%;}
+.status_menu.menu06 li {width:33.3%;}
+.totalpage{text-align:right;font-weight:bold;font-size:12px;}
+.down{text-align:right;font-weight:bold;padding-top:10px;}
+.down a{font-size:12px;color:#666}
+table{width:100%;border-collapse:collapse;}
+table caption{text-align:left;font-weight:bold;padding:10px 5px 5px;}
+table th{border:1px solid #ddd;padding:5px;background:#f9f9f9}
+table td{border:1px solid #ddd;padding:5px;}
+table tr:hover td{background:#f3ffff}
+table .stat,
+table .data{text-align:center;}
+table .line td{border-top:2px solid #999}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery.fn.stat = function (options) {
+		var settings = jQuery.extend({
+				total: '.totalpage',
+				title: 'caption',
+				content: 'table',
+				files: 'tbody tr',
+				stat: 'td.stat',
+				completed: '●',
+				index: 0,
+				openAll: true,
+				speed: 'fast'
+			}, options),
+			all_sections = this;
+		return this.each(function () {
+			var self = this,
+				$self = $(self),
+				title_text = [],
+				completed = 0;
+			self.section_title = $(settings.title, $self);
+			self.content = $(settings.content, $self);
+			self.files = $(settings.files, $self);
+			self.files.each(function () {
+				var stat = $(settings.stat, this);
+				stat.each(function () {
+					var text = $(this).text();
+					if (text && (text === settings.completed)) {
+						completed++;
+					}
+				});
+			});
+			title_text = [self.section_title.text(), '(', completed, '/', self.files.length, ')'];
+			self.section_title.text(title_text.join(''));
+
+			//total
+			var completedAll = 0;
+			$(settings.stat).each(function () {
+				var text = $(this).text();
+				if (text && (text == settings.completed)) {
+					completedAll++;
+				}
+			});
+			$(settings.total).text('(Total : '+completedAll+'/'+$(settings.files).length+'pages)');
+		});
+	};
+	$(document).ready(function () {
+		$('table').stat();
+	});
+</script>
+</body>
+</html>

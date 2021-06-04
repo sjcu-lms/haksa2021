@@ -1,0 +1,130 @@
+!SESSION 2021-05-31 10:56:50.208 -----------------------------------------------
+eclipse.buildId=4.9.0.202012132054
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.springframework.ide.eclipse.boot.dash.cf 4 0 2021-05-31 10:56:53.701
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.dash.cf [564]
+  Unresolved requirement: Require-Bundle: org.springframework.tooling.cloudfoundry.manifest.ls
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2021-05-31 10:57:28.666
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-05-31 10:57:28.666
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2634d000,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1642968c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-05-31 10:57:41.043
+!MESSAGE An internal error occurred during: "Loading available Gradle versions".
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at java.base/javax.crypto.Cipher.getInstance(Cipher.java:546)
+	at java.base/sun.security.ssl.SSLCipher.isTransformationAvailable(SSLCipher.java:510)
+	at java.base/sun.security.ssl.SSLCipher.<init>(SSLCipher.java:499)
+	at java.base/sun.security.ssl.SSLCipher.<clinit>(SSLCipher.java:82)
+	at java.base/sun.security.ssl.CipherSuite.<clinit>(CipherSuite.java:69)
+	at java.base/sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuites(SSLContextImpl.java:343)
+	at java.base/sun.security.ssl.SSLContextImpl$AbstractTLSContext.<clinit>(SSLContextImpl.java:556)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:377)
+	at java.base/java.security.Provider$Service.getImplClass(Provider.java:1917)
+	at java.base/java.security.Provider$Service.newInstance(Provider.java:1893)
+	at java.base/sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+	at java.base/sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+	at java.base/javax.net.ssl.SSLContext.getInstance(SSLContext.java:184)
+	at java.base/javax.net.ssl.SSLContext.getDefault(SSLContext.java:110)
+	at java.base/javax.net.ssl.SSLSocketFactory.getDefault(SSLSocketFactory.java:83)
+	at java.base/javax.net.ssl.HttpsURLConnection.getDefaultSSLSocketFactory(HttpsURLConnection.java:334)
+	at java.base/javax.net.ssl.HttpsURLConnection.<init>(HttpsURLConnection.java:291)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.<init>(HttpsURLConnectionImpl.java:81)
+	at java.base/sun.net.www.protocol.https.Handler.openConnection(Handler.java:62)
+	at java.base/sun.net.www.protocol.https.Handler.openConnection(Handler.java:57)
+	at java.base/java.net.URL.openConnection(URL.java:1101)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:159)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.tryToDownloadAndCacheVersions(PublishedGradleVersions.java:149)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.tryToUpdateOutdatedVersionsFile(PublishedGradleVersions.java:133)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.create(PublishedGradleVersions.java:117)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersionsWrapper$LoadVersionsJob.run(PublishedGradleVersionsWrapper.java:60)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.SecurityException: Can not initialize cryptographic mechanism
+	at java.base/javax.crypto.JceSecurity.<clinit>(JceSecurity.java:121)
+	... 28 more
+Caused by: java.lang.SecurityException: Missing mandatory jurisdiction policy files: unlimited
+	at java.base/javax.crypto.JceSecurity.setupJurisdictionPolicies(JceSecurity.java:381)
+	at java.base/javax.crypto.JceSecurity$1.run(JceSecurity.java:112)
+	at java.base/javax.crypto.JceSecurity$1.run(JceSecurity.java:109)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at java.base/javax.crypto.JceSecurity.<clinit>(JceSecurity.java:108)
+	... 28 more
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-05-31 10:57:43.471
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hiranMain'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-05-31 10:59:29.022
+!MESSAGE An internal error occurred during: "Building UI model".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class sun.security.ssl.SSLContextImpl$DefaultSSLContext
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:377)
+	at java.base/java.security.Provider$Service.getImplClass(Provider.java:1917)
+	at java.base/java.security.Provider$Service.newInstance(Provider.java:1893)
+	at java.base/sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+	at java.base/sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+	at java.base/javax.net.ssl.SSLContext.getInstance(SSLContext.java:184)
+	at java.base/javax.net.ssl.SSLContext.getDefault(SSLContext.java:110)
+	at java.base/javax.net.ssl.SSLSocketFactory.getDefault(SSLSocketFactory.java:83)
+	at java.base/javax.net.ssl.HttpsURLConnection.getDefaultSSLSocketFactory(HttpsURLConnection.java:334)
+	at java.base/javax.net.ssl.HttpsURLConnection.<init>(HttpsURLConnection.java:291)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.<init>(HttpsURLConnectionImpl.java:81)
+	at java.base/sun.net.www.protocol.https.Handler.openConnection(Handler.java:62)
+	at java.base/sun.net.www.protocol.https.Handler.openConnection(Handler.java:57)
+	at java.base/java.net.URL.openConnection(URL.java:1101)
+	at org.springsource.ide.eclipse.commons.frameworks.core.downloadmanager.URLConnectionFactory.createConnection(URLConnectionFactory.java:22)
+	at org.springframework.ide.eclipse.boot.core.BootActivator$1.createConnection(BootActivator.java:110)
+	at org.springframework.ide.eclipse.boot.core.initializr.InitializrServiceSpec.parseFrom(InitializrServiceSpec.java:72)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.parseJsonFrom(NewSpringBootWizardModel.java:530)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.discoverOptions(NewSpringBootWizardModel.java:427)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.<init>(NewSpringBootWizardModel.java:144)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardFactoryModel.lambda$0(NewSpringBootWizardFactoryModel.java:28)
+	at org.springframework.ide.eclipse.boot.wizard.InitializrFactoryModel$1.compute(InitializrFactoryModel.java:54)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:74)
+	at org.springsource.ide.eclipse.commons.livexp.core.AsyncLiveExpression.syncRefresh(AsyncLiveExpression.java:125)
+	at org.springsource.ide.eclipse.commons.livexp.core.AsyncLiveExpression$1.run(AsyncLiveExpression.java:95)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 2 2 2021-05-31 10:59:40.608
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

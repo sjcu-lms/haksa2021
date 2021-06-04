@@ -1,0 +1,204 @@
+/*common*/
+caption>p {display:block;width:1px;height:1px;overflow:hidden;position:absolute;top:-1000em;left:0;} /*190529 추가*/
+
+/*layout*/
+#container{min-width:1200px}
+#contents{padding-right:55px}
+header{min-width:1200px}
+header h1 a{background-image:url(../img_bvs/admin/logo.png)}
+header #top{background:#fff}
+header #top ul li a{background-image:url(../img_bvs/admin/util1.png);color:#38445c}
+header #top ul li:nth-child(2) a{background-image:url(../img_bvs/admin/util2.png);}
+header #top ul li:nth-child(3) a{background-image:url(../img_bvs/admin/util3.png);}
+header #top ul li:nth-child(4) a{background-image:url(../img_bvs/admin/util4.png);}
+header #top ul li:nth-child(5) a{background-image:url(../img_bvs/admin/util5.png);}
+header .my>b{color:#38445c}
+header .my .noti{background-image:url(../img_bvs/admin/util_mail.png)}
+header .my p a, header .my p button{border-color:#38445c;color:#38445c}
+header .my p a:after, header .my p button:after{background-image:url(../img_bvs/admin/util_logout.png)}
+header .my p .mypage{background:#b71544;border-color:#b71544;color:#fff}
+article{min-height:500px}
+
+#gnb{background:url(../img_bvs/bg/blue3.png)}
+#gnb .menu{padding-left:70px;}
+#gnb .menu>li>a{padding:0 15px;color:#fff}
+.web #gnb .menu>li>a:hover,
+#gnb .menu>li>a.on,
+#gnb .menu>li>a.active{color:#b2c5f0}
+.menu_child{background:#fff;padding-top:1px}
+
+#lnb{padding-right:1px}
+#lnb h2{
+	background:#fff;
+	border-bottom:1px solid #6a7995;
+	color:#38445c
+}
+#lnb>ul{background:#fff}
+#lnb>ul>li>a{border-top:1px solid #e0e1e2;color:#000}
+#lnb>ul>li.child>a{background-image:url(../img_bvs/admin/lnb_arrow.png)}
+#lnb>ul>li.child.on>a{background-image:url(../img_bvs/admin/lnb_arrow_on.png)}
+#lnb>ul>li:hover:not(.on){background:#6a7995}
+#lnb>ul>li:hover:not(.on)>a{border-color:#6a7995;color:#fff}
+#lnb>ul>li:hover:not(.on)+li:not(.on)>a{border-color:#fff}
+#lnb>ul>li.on{background:#6a7995}
+#lnb>ul>li.on+li>a:first-child{border:0}
+#lnb>ul>li.on>a{color:#fff;border-color:#6a7995}
+#lnb>ul ul{background:#e8ecf1}
+#lnb>ul ul a:hover, #lnb>ul ul a.on{background-image:url(../img_bvs/admin/gnb_dot_on.png);color:#2b4290}
+
+@media screen and (max-width:1200px){
+	#contents{padding:0 55px 100px 55px}
+}
+
+/*홈페이지관리*/
+#lnb.admin_homepage h2:before{background-image:url(../img_bvs/bg/lnb_admin1.png)}
+
+/*포털관리*/
+#lnb.admin_portal h2:before{background-image:url(../img_bvs/bg/lnb_admin2.png)}
+
+/*강의실관리*/
+#lnb.admin_classroom h2:before{background-image:url(../img_bvs/bg/lnb_admin3.png)}
+
+/*정보광장관리*/
+#lnb.admin_information h2:before{background-image:url(../img_bvs/bg/lnb_admin4.png)}
+
+/*CDMS/LCMS*/
+#lnb.admin_cdms h2:before{background-image:url(../img_bvs/bg/lnb_admin5.png)}
+
+/*시스팀관리*/
+#lnb.admin_system h2:before{background-image:url(../img_bvs/bg/lnb_admin6.png)}
+
+/*메인*/
+#contents.main{
+	padding-top:50px;
+	background:#e4ebf1;
+}
+#contents.main article{border:0;padding:0}
+
+#contents.main ul{width:101%;overflow:hidden;margin-left:-1%}
+#contents.main ul li{
+	float:left;width:24%;
+	margin:0 0 1% 1%;
+	background:#fff
+}
+#contents.main ul li a{
+	display:block;height:260px;
+	box-sizing:border-box;
+	padding-top:180px;
+	background:url(../img_bvs/admin/main_icon1.png) no-repeat center 65px;
+	text-align:center;font-size:24px;font-weight:600;color:#000
+}
+#contents.main ul li:nth-child(2) a{background-image:url(../img_bvs/admin/main_icon2.png)}
+#contents.main ul li:nth-child(3) a{background-image:url(../img_bvs/admin/main_icon3.png)}
+#contents.main ul li:nth-child(4) a{background-image:url(../img_bvs/admin/main_icon4.png)}
+#contents.main ul li:nth-child(5) a{background-image:url(../img_bvs/admin/main_icon5.png)}
+#contents.main ul li:nth-child(6) a{background-image:url(../img_bvs/admin/main_icon6.png)}
+#contents.main ul li:nth-child(7) a{background-image:url(../img_bvs/admin/main_icon7.png)}
+#contents.main ul li:nth-child(8) a{background-image:url(../img_bvs/admin/main_icon8.png)}
+
+/*접속통계*/
+.total_state_title{
+	position:relative;
+	padding:0 20px;margin-bottom:20px;
+	background:#f2f4f7;
+}
+.total_state_title h3{margin:0;height:65px;line-height:65px;background-position:0 50%}
+.total_state_title h3 small{display:inline-block;padding:0 5px;font-weight:normal;color:#aaa;font-size:12px;vertical-align:top}
+.total_state_title time{
+	position:absolute;right:20px;top:0;
+	display:inline-block;height:65px;line-height:65px;
+	font-size:14px;font-weight:600;color:#2b4290
+}
+.total_state td b{font-weight:600;color:#2b4290;font-size:30px;letter-spacing:-2px}
+.total_state td+td{
+	padding-left:20px;
+	border-left:1px solid #e0e1e2;
+	text-align:left
+}
+.total_state .graph{position:relative;padding-right:60px;margin-top:5px;}
+.total_state .graph>b{
+	position:absolute;right:0;top:0;
+	display:inline-block;height:22px;line-height:22px;
+	font-size:16px;font-weight:600;color:#000
+}
+.total_state .graph>span{
+	position:relative;
+	display:block;width:100%;height:22px;
+	background:#d6d6d6;
+}
+.total_state .graph>span em{
+	position:absolute;top:0;left:0;
+	display:block;width:0;height:100%;
+	background:#7d8db1;
+	transition:.5s;
+}
+.total_state .graph.red>span em{background:#b71544}
+
+/*로그인통계*/
+.login_state{width:102%;overflow:hidden;margin-left:-2%}
+.login_state>div{
+	float:left;width:23%;
+	box-sizing:border-box;
+	margin:0 0 2% 2%;padding:20px;
+	border:1px solid #e4ebf1;
+}
+.login_state>div h3{
+	padding-bottom:10px;
+	font-size:20px;font-weight:600;text-align:center;line-height:1.2em;color:#000
+}
+.login_state>div>div{height:230px}
+.login_state>div:nth-child(5){width:98%}
+
+.personalInfo {}
+.personalInfo .func_area {overflow:hidden;margin-bottom:15px;font-size:0;text-align:right;}
+.personalInfo .func_area>a+a,
+.personalInfo .func_area>button+button,
+.personalInfo .func_area>a+button,
+.personalInfo .func_area>a+button {margin-left:15px;}
+.personalInfo .func_area .btn_print {display:inline-block;height:24px;padding:0 30px 0 10px;border-radius:2px;background:#b71544 url(../img_bvs/btn_icon/print.png) no-repeat right 10px top 50%;color:#fff;font-size:13px;line-height:24px;}
+.personalInfo table input.txt {padding:0 5px;}
+.personalInfo table input.txt.txt2 {width:45%;}
+.personalInfo table input.txt.txt3 {width:25%;}
+.personalInfo table input.txt.txt3_2 {width:39%;}
+.personalInfo table select {padding-left:5px;background-position:right -5px top 50%;}
+.personalInfo table select.s3 {width:30%;}
+.personalInfo .normalTable td {padding:10px 5px;}
+.personalInfo table td.pic {position:relative;}
+.personalInfo table td.pic>.btn_edit {display:block;position:absolute;right:10px;bottom:10px;overflow:hidden;width:30px;height:30px;border-radius:15px;background:#b71544 url(../img_bvs/btn_icon/modify.png) no-repeat 50% 50%;text-align:left;text-indent:-999px;}
+.personalInfo table .profile_pic {width:140px;height:186px;background:#f8f8f8 url(../img_bvs/bg/logo2.png) no-repeat center;border-radius:0;}
+.personalInfo .infoDetail {margin-top:35px;}
+.personalInfo label.noTxt {overflow:hidden;width:23px;height:20px;}
+
+/*190529 추가 시작 */
+
+/* 공통컨텐츠 */
+.btn_txtBtn {box-sizing:border-box;min-width:50px;height:100%;margin-left:10px;lbox-sizing:border-box;padding:0 10px;background:#0d1c1f;border-radius:3px;text-align:center;font-size:14px;color:#fff;font-weight:600}
+.status_ok,
+.booking_appli {color:#b71544;}
+.status_end,
+.booking_approv {color:#2b418e;}
+
+table .tx25p {width:24%;}
+table .tx50p {width:49%;}
+
+label:last-of-type {margin-right:0;}
+
+/* 콘텐츠 제작관리 */
+.inputSearch {position:relative;box-sizing:border-box;padding:0 60px 0 0;}
+.inputSearch .btn_search {position:absolute;top:0;right:0;box-sizing:border-box;min-width:50px;height:100%;box-sizing:border-box;padding:0 10px;background:#0d1c1f;border-radius:3px;text-align:center;font-size:14px;color:#fff;font-weight:600}
+
+/*190529 추가 끝 */
+
+/* 191217 멘토링 관리 추가 */
+
+.unSub {color:#b71544}
+.statusBoxBg {margin-bottom:50px;font-size:0;}
+.statusBoxBg .statusBox {display:inline-block;width:calc(50% - 3px);background-color:#f2f4f7;box-sizing:border-box;height:90px;vertical-align:top;}
+.statusBoxBg .statusBox ul.caution {background-color:#f2f4f7;background-position: 37px 24px;padding-left:95px;padding-top:23px;border:0;margin:0}
+.statusBoxBg .statusBox ul.caution li {color:#b71544}
+.statusBoxBg .statusBox input.txt {margin-left:20px;}
+.statusBoxBg .statusBox:first-child{margin-right:3px;}
+.statusBoxBg .statusBox:nth-child(2) {padding:25px;text-align:center;}
+.statusBoxBg .statusBox:nth-child(2) p.txt {font-size:21px;font-weight:700;}
+.btn_result {display: inline-block;margin-left:85px;width:114px;height:40px;background:#38445c;color:#fff;font-size:16px;border-radius:4px;font-weight:500}
+/* 191217 추가 끝 */
